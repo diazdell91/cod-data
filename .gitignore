@@ -60,11 +60,12 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-
+data.xlsx
 # Flask stuff:
 instance/
 .webassets-cache
-
+share/
+scripts/
 # Scrapy stuff:
 .scrapy
 
@@ -74,7 +75,7 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
-
+outputs/
 # Jupyter Notebook
 .ipynb_checkpoints
 
