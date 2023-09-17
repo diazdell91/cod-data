@@ -259,79 +259,69 @@ def exportExcel():
 
 
 def main():
-    # current_directory = os.path.dirname(os.path.realpath(__file__))
-    # # navigateToAlliance(current_directory)
-    # time.sleep(0.5)
-    # move_to_rank(current_directory, 4)
-    # time.sleep(0.5)
-    # pyautogui.click()
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    # navigateToAlliance(current_directory)
+    time.sleep(0.5)
+    move_to_rank(current_directory, 4)
+    time.sleep(0.5)
+    pyautogui.click()
 
-    # r1, r2, r3, r4 = extract_members_by_rank()
-
-    # manualMoveR4 = False
-    # manualMoveR3 = False
-    # manualMoveR2 = False
-    # if r1 < 5:
-    #     manualMoveR2 = True
-
-    # if (r1 + r2) < 5:
-    #     manualMoveR3 = True
-
-    # open_every_rank()
+    r1, r2, r3, r4 = extract_members_by_rank()
+    open_every_rank()
     
-    # get_leader_info()
-    # move_to_rank(current_directory, 4)
-    # time.sleep(0.25)
+    get_leader_info()
+    move_to_rank(current_directory, 4)
+    time.sleep(0.25)
 
-    # spacing = 2 
-    # while(r4 > 0):
-    #     r4 = get_row_info(r4, spacing)
-    #     if(spacing == 2):
-    #         spacing = 3
-    #     else:
-    #         spacing = 2
+    spacing = 2 
+    while(r4 > 0):
+        r4 = get_row_info(r4, spacing)
+        if(spacing == 2):
+            spacing = 3
+        else:
+            spacing = 2
     
-    # scroll_down(spacing - 1)
-    # time.sleep(0.5)
-    # move_to_rank(current_directory, 3)
-    # time.sleep(1)
+    scroll_down(spacing - 1)
+    time.sleep(0.5)
+    move_to_rank(current_directory, 3)
+    time.sleep(1)
 
-    # spacing = 2 
-    # while(r3 > 0):
-    #     r3 = get_row_info(r3, spacing)
-    #     if(spacing == 2):
-    #         spacing = 3
-    #     else:
-    #         spacing = 2
+    spacing = 2 
+    while(r3 > 0):
+        r3 = get_row_info(r3, spacing)
+        if(spacing == 2):
+            spacing = 3
+        else:
+            spacing = 2
 
-    # scroll_down(spacing - 1)
-    # time.sleep(0.5)
-    # move_to_rank(current_directory, 2)
-    # time.sleep(1)
+    scroll_down(spacing - 1)
+    time.sleep(0.5)
+    move_to_rank(current_directory, 2)
+    time.sleep(1)
 
-    # spacing = 2 
-    # while(r2 > 0):
-    #     r2 = get_row_info(r2, spacing)
-    #     if(spacing == 2):
-    #         spacing = 3
-    #     else:
-    #         spacing = 2
+    spacing = 2 
+    while(r2 > 0):
+        r2 = get_row_info(r2, spacing)
+        if(spacing == 2):
+            spacing = 3
+        else:
+            spacing = 2
     
-    # scroll_down(spacing - 1)
-    # time.sleep(0.5)
-    # move_to_rank(current_directory, 2)
-    # time.sleep(1)
+    scroll_down(spacing - 1)
+    time.sleep(0.5)
+    move_to_rank(current_directory, 2)
+    time.sleep(1)
 
-    # spacing = 2 
-    # while(r1 > 0):
-    #     if r1 > 6:
-    #         r1 = get_row_info(r1, spacing)
-    #         if(spacing == 2):
-    #             spacing = 3
-    #         else:
-    #             spacing = 2
-    #     else:
-    #         r1 = get_row_info_with_move(r1)
+    spacing = 2 
+    while(r1 > 0):
+        if r1 > 6:
+            r1 = get_row_info(r1, spacing)
+            if(spacing == 2):
+                spacing = 3
+            else:
+                spacing = 2
+        else:
+            r1 = get_row_info_with_move(r1)
     
     exportExcel()
 
