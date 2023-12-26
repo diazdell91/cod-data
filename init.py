@@ -1,6 +1,5 @@
 import pyautogui
 import time
-import pyautogui
 import os
 import easyocr
 import cv2
